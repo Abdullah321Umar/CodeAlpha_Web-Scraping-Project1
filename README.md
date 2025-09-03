@@ -61,9 +61,112 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
+```
 
-b) Setting up Selenium WebDriver
+### b) Setting up Selenium WebDriver
+```python
 service = Service("path_to_chromedriver.exe")
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(service=service, options=options)
+```
+
+### c) Navigating FIFA Rankings Page
+```python
+url = "https://www.fifa.com/fifa-world-ranking/"
+driver.get(url)
+time.sleep(5)  # Wait for dynamic content to load
+```
+
+### d) Parsing Rankings Table
+```python
+soup = BeautifulSoup(driver.page_source, "html.parser")
+teams = []
+for row in soup.find_all("tr", class_="ranking-row"):
+    rank = row.find("td", class_="rank").text.strip()
+    team = row.find("td", class_="team-name").text.strip()
+    points = row.find("td", class_="points").text.strip()
+    teams.append([rank, team, points])
+
+```
+
+### e) Saving Data to CSV
+```python
+df = pd.DataFrame(teams, columns=["Rank", "Team", "Points"])
+df.to_csv("FIFA_Rankings.csv", index=False)
+
+```
+
+
+---
+
+
+## ⚡ Challenges & Solutions
+| Challenge | Solution |
+|------------|---------|
+| Dynamic content loading	| Added time.sleep() and Selenium waits |
+| Complex HTML structure	| Used browser inspect tools to locate elements |
+| Missing data | Added checks to skip empty rows |
+| Large dataset |	Stored results in CSV for structured analysis |
+
+---
+
+
+## 📊 Output & Results
+- Successfully scraped all FIFA-ranked teams ✅
+- Data exported to FIFA_Rankings.csv 📂
+
+
+---
+
+## Top 5 Teams
+|------------|---------|--------|
+| Rank | Team | Points |
+| 1 |	Argentina	1841 |
+| 2 |	France |	1827 |
+| 3 |	Brazil |	1818 | 
+| 4 |	Belgium |	1778 |
+| 5 |	England |	1769 |
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
