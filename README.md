@@ -120,8 +120,8 @@ df.to_csv("FIFA_Rankings.csv", index=False)
 ---
 
 ## Top 5 Teams
-|------------|---------|--------|
 | Rank | Team | Points |
+|------------|---------|--------|
 | 1 |	Argentina	1841 |
 | 2 |	France |	1827 |
 | 3 |	Brazil |	1818 | 
