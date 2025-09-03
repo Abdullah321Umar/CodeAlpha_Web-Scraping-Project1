@@ -62,3 +62,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 
+b) Setting up Selenium WebDriver
+service = Service("path_to_chromedriver.exe")
+options = webdriver.ChromeOptions()
+options.add_argument("--start-maximized")
+driver = webdriver.Chrome(service=service, options=options)
