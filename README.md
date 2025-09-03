@@ -122,7 +122,7 @@ df.to_csv("FIFA_Rankings.csv", index=False)
 ## Top 5 Teams
 | Rank | Team | Points |
 |------------|---------|--------|
-| 1 |	Argentina	1841 |
+| 1 |	Argentina |	1841 |
 | 2 |	France |	1827 |
 | 3 |	Brazil |	1818 | 
 | 4 |	Belgium |	1778 |
@@ -130,14 +130,46 @@ df.to_csv("FIFA_Rankings.csv", index=False)
 
 ---
 
+## 🚀 Future Improvements
+- Schedule automatic scraping for real-time updates
+- Visualize rankings using matplotlib or seaborn 📈
+- Store historical data in a database for trend analysis
+- Extend scraping to include team stats, goals, and player rankings
+
+---
+
+## 🎯 Learning Outcomes
+- Hands-on experience with Selenium and BeautifulSoup integration
+- Understanding dynamic web content and HTML parsing
+- Improved Python, automation, and data handling skills
+- Learned to handle real-world web scraping challenges
+
+---
 
 
+## ✅ Conclusion
+This project demonstrates the ability to automate FIFA ranking extraction, producing structured datasets for analysis or reporting.
+It showcases skills in Python programming, web scraping, and data management, useful for sports analytics, data science, and research projects.
+
+---
+
+## 🔗 Connect
+### 💼 LinkedIn: https://www.linkedin.com/in/abdullah-umar-730a622a8/
+### 💼 Portfolio: https://linktr.ee/AbdullahUmar.DataAnalyst
+### 📧 Email: umerabdullah048@gmail.com
+
+---
 
 
+### Task Statement:-
+![Preview](https://github.com/Abdullah321Umar/CodeAlpha_Web-Scraping-Project1/blob/main/Project%201.png)
 
 
+---
 
-
+### Screenshots / Demos:-
+Show what the Code and Output look like.
+![Preview](https://github.com/Abdullah321Umar/CodeAlpha_Web-Scraping-Project1/blob/main/Project%201(Code%2BOutput).ipynb)
 
 
 
