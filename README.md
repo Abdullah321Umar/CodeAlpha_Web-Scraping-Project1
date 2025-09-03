@@ -1,4 +1,4 @@
-# 🌍 FIFA Data Web Scraping Project ⚽
+# 🌍 FIFA Data Web Scraping Project 1 ⚽
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-4.12.0-green?logo=selenium&logoColor=white)](https://www.selenium.dev/)
