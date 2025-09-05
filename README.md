@@ -153,7 +153,7 @@ It showcases skills in Python programming, web scraping, and data management, us
 
 ---
 
-## 🔗 Connect
+## 🔗 Let's Connect:-
 ### 💼 LinkedIn: https://www.linkedin.com/in/abdullah-umar-730a622a8/
 ### 💼 Portfolio: https://linktr.ee/AbdullahUmar.DataAnalyst
 ### 📧 Email: umerabdullah048@gmail.com
